@@ -4,34 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lễ Tốt Nghiệp của Lưu Linh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        /* Đổi font chữ thành Inter và fallback sang sans-serif */
+        body { 
+            font-family: 'Inter', 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f9f9f9; 
+            color: #333; 
+            line-height: 1.6; /* Tăng giãn cách dòng cho dễ đọc */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
         
         /* Hero Section */
-        header { background: #2c3e50; color: white; text-align: center; padding: 50px 20px; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { font-size: 1.2em; opacity: 0.9; }
+        header { 
+            background: #2c3e50; 
+            color: white; 
+            text-align: center; 
+            padding: 50px 20px; 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8em; /* Tăng kích thước tiêu đề chính */
+            margin-bottom: 10px;
+        }
+        header p { 
+            font-size: 1.2em; 
+            opacity: 0.9; 
+        }
         
         /* Sections */
-        .section { background: white; margin: 20px 0; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .section { 
+            background: white; 
+            margin: 20px 0; 
+            padding: 30px; 
+            border-radius: 10px; /* Góc bo tròn hơn */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Đổ bóng rõ hơn */
+        }
+        h2 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 15px; /* Tăng khoảng cách dưới tiêu đề */
+            margin-top: 0;
+            font-size: 1.6em;
+        }
         
+        /* Lists */
+        .section ul {
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
         /* Button */
-        .btn { display: inline-block; background: #e67e22; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; border: none; cursor: pointer; }
-        .btn:hover { background: #d35400; }
+        .btn { 
+            display: inline-block; 
+            background: #e67e22; 
+            color: white; 
+            padding: 12px 28px; /* Tăng padding nút */
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: 700; /* Bolder font weight */
+            margin-top: 25px; 
+            border: none; 
+            cursor: pointer; 
+            transition: background 0.3s;
+        }
+        .btn:hover { 
+            background: #d35400; 
+        }
         
         /* Form */
         input[type="text"], textarea { 
             width: 100%; 
-            padding: 10px; 
-            margin: 10px 0; 
-            border: 1px solid #ddd; 
-            border-radius: 4px; 
+            padding: 12px; /* Tăng padding input */
+            margin: 10px 0 15px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
             box-sizing: border-box; 
         }
         input[type="radio"] {
-            margin-right: 5px;
+            margin-right: 8px; /* Tăng khoảng cách radio */
         }
 
         /* Confetti Styles */
@@ -55,12 +118,12 @@
 
         /* Image specific styles */
         .profile-image {
-            max-width: 70%; /* Giảm kích thước ảnh */
+            max-width: 70%; 
             height: auto;
             border-radius: 8px;
-            margin: 20px auto; /* Canh giữa và tạo khoảng cách */
-            display: block; /* Đảm bảo max-width và margin auto hoạt động */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Thêm đổ bóng nhẹ */
+            margin: 20px auto; 
+            display: block; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
         }
         .image-caption {
             text-align: center;
@@ -68,7 +131,7 @@
             color: #555;
             margin-top: 10px;
             font-size: 1.1em;
-            font-weight: bold;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -93,18 +156,19 @@
         <div class="section">
             <h2>📸 Khoảnh Khắc Của Mình</h2>
             <div style="text-align: center;">
-                <img src="https://github.com/linhluuir-ui/luulinh/blob/main/anhtotnghiep.jpg?raw=true" alt="Ảnh tốt nghiệp của Lưu Linh" class="profile-image">
+                
+                <img src="https://github.com/linhluuir-ui/luuliinh/blob/main/anhtotnghiep.jpg?raw=true" alt="Ảnh tốt nghiệp của Lưu Linh" class="profile-image">
                 <p class="image-caption">Lưu Linh đã tốt nghiệp!</p>
+                
             </div>
-            <p style="text-align: center; margin-top: 20px;">Một vài hình ảnh đáng nhớ trên hành trình học tập...</p>
-        </div>
+            </div>
 
         <div class="section">
             <h2>📍 Thời Gian & Địa Điểm</h2>
             <ul>
                 <li><strong>Thời gian:</strong> 09:00 AM - 11:59 AM, Thứ Sáu ngày 06/12/2025</li>
                 <li><strong>Địa điểm:</strong> Trường Đại học Khoa học Xã hội và Nhân văn TP.HCM (Cơ sở Sài Gòn: 10-12 Đinh Tiên Hoàng, P. Bến Nghé, Q.1, TP.HCM)</li>
-                <li><strong>Dresscode:</strong> Xinh đẹp là được nè </li>
+                <li><strong>Dresscode:</strong> Trang phục lịch sự, áo dài, vest.</li>
             </ul>
             <div style="text-align: center;">
                 <a href="https://www.google.com/maps/place/10+12+%C4%90inh+Ti%C3%AAn+Ho%C3%A0ng,+B%E1%BA%BFn+Ngh%C3%A9,+Qu%E1%BA%ADn+1,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.785951,106.6999229,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f4a53f83e3f:0xccd2ae88a6ac46bf!8m2!3d10.785951!4d106.7024978!16s%2Fg%2F11w3phmhw5?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank">Xem bản đồ</a>
@@ -115,7 +179,7 @@
             <h2>✍️ Gửi Lời Chúc & Xác Nhận Tham Dự</h2>
             <p>Hãy gửi lời chúc và xác nhận tham dự để mình có thể đón tiếp chu đáo nhé!</p>
 
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSf4_bY9J39k9NfJz_d-o444444444444/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSefW85Sh9czzz7FAxx3JXfVGM2vFWidhPRTbZMlJOs/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 
                 <label for="name">Tên của bạn:</label>
                 <input type="text" id="name" name="entry.1746200676" placeholder="Ví dụ: Nguyễn Văn A" required>
@@ -139,7 +203,7 @@
 
     </div>
 
-    <footer style="text-align: center; padding: 20px; font-size: 0.9em; color: #777;">
+    <footer style="text-align: center; padding: 20px; font-size: 0.9em; color: #777; margin-top: 20px;">
         <p>Rất mong được gặp bạn trong ngày đặc biệt này! ❤️</p>
     </footer>
 
