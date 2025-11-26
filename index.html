@@ -52,6 +52,24 @@
             0% { opacity: 1; transform: translateY(-10px) rotateZ(0deg); }
             100% { opacity: 0; transform: translateY(100vh) rotateZ(720deg); }
         }
+
+        /* Image specific styles */
+        .profile-image {
+            max-width: 70%; /* Giảm kích thước ảnh */
+            height: auto;
+            border-radius: 8px;
+            margin: 20px auto; /* Canh giữa và tạo khoảng cách */
+            display: block; /* Đảm bảo max-width và margin auto hoạt động */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Thêm đổ bóng nhẹ */
+        }
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +91,15 @@
         </div>
 
         <div class="section">
+            <h2>📸 Khoảnh Khắc Của Mình</h2>
+            <div style="text-align: center;">
+                <img src="https://github.com/linhluuir-ui/luulinh/blob/main/anhtotnghiep.jpg?raw=true" alt="Ảnh tốt nghiệp của Lưu Linh" class="profile-image">
+                <p class="image-caption">Lưu Linh đã tốt nghiệp!</p>
+            </div>
+            <p style="text-align: center; margin-top: 20px;">Một vài hình ảnh đáng nhớ trên hành trình học tập...</p>
+        </div>
+
+        <div class="section">
             <h2>📍 Thời Gian & Địa Điểm</h2>
             <ul>
                 <li><strong>Thời gian:</strong> 09:00 AM - 11:59 AM, Thứ Sáu ngày 06/12/2025</li>
@@ -85,39 +112,29 @@
         </div>
 
         <div class="section">
-            <h2>📸 Khoảnh Khắc Của Mình</h2>
-            <div style="text-align: center;">
-                
-<img src="https://github.com/linhluuir-ui/luulinh/blob/main/anhtotnghiep.jpg?raw=true" alt="Ảnh tốt nghiệp của Lưu Linh" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
-                
-            </div>
-            <p>Một vài hình ảnh đáng nhớ trên hành trình học tập...</p>
-        </div>
-
-        <div class="section">
             <h2>✍️ Gửi Lời Chúc & Xác Nhận Tham Dự</h2>
             <p>Hãy gửi lời chúc và xác nhận tham dự để mình có thể đón tiếp chu đáo nhé!</p>
 
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLScJp881s71BPv_388818J4hyondpip0C5CS/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSf4_bY9J39k9NfJz_d-o444444444444/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 
                 <label for="name">Tên của bạn:</label>
-                <input type="text" id="name" name="entry.2120468352" placeholder="Ví dụ: Nguyễn Văn A" required>
+                <input type="text" id="name" name="entry.1746200676" placeholder="Ví dụ: Nguyễn Văn A" required>
                 
                 <label style="display: block; margin-top: 15px;">Xác nhận tham dự:</label>
                 <div style="margin: 10px 0;">
-                    <input type="radio" id="attend-yes" name="entry.1741755198" value="Tham gia được nè" required>
+                    <input type="radio" id="attend-yes" name="entry.1691230199" value="Tham gia được nè" required>
                     <label for="attend-yes">Tham gia được nè</label>
                     <br>
-                    <input type="radio" id="attend-no" name="entry.1741755198" value="Tiếc là khum đi được rùi">
+                    <input type="radio" id="attend-no" name="entry.1691230199" value="Tiếc là khum đi được rùi">
                     <label for="attend-no">Tiếc là khum đi được rùi</label>
                 </div>
 
                 <label for="message" style="display: block; margin-top: 15px;">Lời chúc:</label>
-                <textarea id="message" name="entry.114704047" rows="4" placeholder="Viết vài dòng cho mình nhé..."></textarea>
+                <textarea id="message" name="entry.1018337777" rows="4" placeholder="Viết vài dòng cho mình nhé..."></textarea>
                 
                 <button type="submit" class="btn">Gửi lời chúc & Xác nhận</button>
             </form>
-            <p style="font-size: 0.8em; margin-top: 15px;">*Tất cả thông tin sẽ được tự động lưu vào Google Sheet của bạn.</p>
+            <p style="font-size: 0.8em; margin-top: 15px;">*Dữ liệu sẽ được lưu tự động và chính xác vào Google Sheet của bạn.</p>
         </div>
 
     </div>
