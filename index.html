@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lễ Tốt Nghiệp của [Tên Bạn]</title>
+    <title>Lễ Tốt Nghiệp của Lưu Linh</title>
     <style>
         body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; }
@@ -22,7 +22,36 @@
         .btn:hover { background: #d35400; }
         
         /* Form */
-        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+        input[type="text"], textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            box-sizing: border-box; /* Quan trọng để input không bị tràn ra ngoài */
+        }
+        /* Style cho radio button */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Confetti Styles */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00; 
+            top: -10px; 
+            animation: fall 3s forwards;
+            opacity: 0;
+            border-radius: 50%; 
+            transform: rotateZ(0deg);
+        }
+
+        @keyframes fall {
+            0% { opacity: 1; transform: translateY(-10px) rotateZ(0deg); }
+            100% { opacity: 0; transform: translateY(100vh) rotateZ(720deg); }
+        }
     </style>
 </head>
 <body>
@@ -30,52 +59,86 @@
     <header>
         <p>Thân mời dự</p>
         <h1>LỄ TỐT NGHIỆP</h1>
-        <p>Của [Tên Bạn]</p>
-        <p>🎓 [Ngày Tháng Năm] 🎓</p>
+        <p>Của Lưu Linh</p>
+        <p>🎓 06/12/2025 🎓</p>
     </header>
 
     <div class="container">
         
         <div class="section">
             <h2>🎉 Lời Ngỏ</h2>
-            <p>Chào mọi người, vậy là hành trình 4 năm tại [Tên Trường] đã đi đến hồi kết. Mình rất hạnh phúc khi được chia sẻ khoảnh khắc này cùng bạn.</p>
+            <p>Hi mọi người, vậy là hành trình 4 năm tại Khoa Quan hệ Quốc tế - Nhân văn đã đi đến hồi kết rùi. Mình rất hạnh phúc khi được chia sẻ khoảnh khắc trọng đại này cùng gia đình, thầy cô và bạn bè thân yêu. Sự hiện diện của các bạn/anh chị/em là món quà ý nghĩa nhất cho em trong khoảnh khắc đáng nhớ này hehe </p>
         </div>
 
         <div class="section">
             <h2>📍 Thời Gian & Địa Điểm</h2>
             <ul>
-                <li><strong>Thời gian:</strong> 08:00 Sáng, Chủ Nhật ngày...</li>
-                <li><strong>Địa điểm:</strong> Hội trường A, Đại học...</li>
-                <li><strong>Dresscode:</strong> Lịch sự / Trắng & Đen</li>
+                <li><strong>Thời gian:</strong> 09:00 AM - 11:59 AM, Thứ Sáu ngày 06/12/2025</li>
+                <li><strong>Địa điểm:</strong> Trường Đại học Khoa học Xã hội và Nhân văn TP.HCM (Cơ sở Sài Gòn: 10-12 Đinh Tiên Hoàng, P. Bến Nghé, Q.1, TP.HCM)</li>
+                <li><strong>Dresscode:</strong> Xinh đẹp.</li>
             </ul>
             <div style="text-align: center;">
-                <a href="LINK_GOOGLE_MAPS_CUA_BAN" class="btn">Xem bản đồ</a>
+                <a href="https://www.google.com/maps/place/10+12+%C4%90inh+Ti%C3%AAn+Ho%C3%A0ng,+B%E1%BA%BFn+Ngh%C3%A9,+Qu%E1%BA%ADn+1,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.785951,106.6999229,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f4a53f83e3f:0xccd2ae88a6ac46bf!8m2!3d10.785951!4d106.7024978!16s%2Fg%2F11w3phmhw5?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank">Xem bản đồ</a>
+                <p style="font-size: 0.8em; margin-top: 10px;">(Vui lòng thay thế "URL_GOOGLE_MAPS_CUA_BAN" bằng link Google Maps chính xác)</p>
             </div>
         </div>
 
         <div class="section">
-            <h2>📸 Khoảnh Khắc</h2>
-            <p>[Chèn hình ảnh của bạn tại đây]</p>
+            <h2>📸 Khoảnh Khắc Của Mình</h2>
+            <div style="text-align: center;">
+                
+<img src="URL_ANH_TOT_NGHIEP_CUA_BAN" alt="Ảnh tốt nghiệp của Lưu Linh" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
+                <p style="font-size: 0.8em; margin-top: 10px;">(Vui lòng thay thế "URL_ANH_TOT_NGHIEP_CUA_BAN" bằng link ảnh của bạn)</p>
+            </div>
+            <p>Một vài hình ảnh đáng nhớ trên hành trình học tập...</p>
         </div>
 
         <div class="section">
-            <h2>✍️ Gửi Lời Chúc & Xác Nhận</h2>
+            <h2>✍️ Gửi Lời Chúc & Xác Nhận Tham Dự</h2>
+            <p>Sự hiện diện của bạn là món quà quý giá nhất đối với mình. Hãy gửi lời chúc và xác nhận tham dự để mình có thể đón tiếp chu đáo nhé!</p>
             <form>
-                <label>Tên của bạn:</label>
-                <input type="text" placeholder="Nhập tên...">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" placeholder="Ví dụ: Nguyễn Văn A" required>
                 
-                <label>Lời chúc:</label>
-                <textarea rows="4" placeholder="Viết vài dòng cho mình nhé..."></textarea>
+                <label for="attendance-group" style="display: block; margin-top: 15px;">Xác nhận tham dự:</label>
+                <div id="attendance-group" style="margin: 10px 0;">
+                    <input type="radio" id="attend-yes" name="attendance" value="Tham gia được nè" required>
+                    <label for="attend-yes">Tham gia được nè</label>
+                    <br>
+                    <input type="radio" id="attend-no" name="attendance" value="Tiếc là khum đi được rùi">
+                    <label for="attend-no">Tiếc là khum đi được rùi</label>
+                </div>
+
+                <label for="message" style="display: block; margin-top: 15px;">Lời chúc:</label>
+                <textarea id="message" rows="4" placeholder="Viết vài dòng cho mình nhé..."></textarea>
                 
-                <button type="submit" class="btn">Gửi đi</button>
+                <button type="submit" class="btn">Gửi lời chúc & Xác nhận</button>
             </form>
+            <p style="font-size: 0.8em; margin-top: 15px;">*Lưu ý: Để lưu trữ lời chúc và xác nhận, bạn cần tích hợp thêm dịch vụ bên thứ ba (như Google Forms hoặc Formspree).</p>
         </div>
 
     </div>
 
     <footer style="text-align: center; padding: 20px; font-size: 0.9em; color: #777;">
-        <p>Rất mong được gặp bạn! ❤️</p>
+        <p>Rất mong được gặp bạn trong ngày đặc biệt này! ❤️</p>
     </footer>
+
+    <script>
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + 'vw'; 
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; 
+            confetti.style.animationDuration = Math.random() * 2 + 3 + 's'; 
+            document.body.appendChild(confetti);
+
+            confetti.addEventListener('animationend', () => {
+                confetti.remove();
+            });
+        }
+
+        setInterval(createConfetti, 100); 
+    </script>
 
 </body>
 </html>
